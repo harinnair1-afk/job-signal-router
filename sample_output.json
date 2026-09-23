@@ -1,0 +1,186 @@
+[
+  {
+    "company": "Anthropic",
+    "role_title": "GTM Strategy Lead",
+    "function": "Strategy",
+    "seniority": "Target",
+    "fit_score": 1.0,
+    "priority_tier": 1,
+    "company_tier": "Tier 1",
+    "baseline_recommendation": "Strategy",
+    "knockout_flags": [],
+    "rationale": "Strategy-function match at target level, posted 1d ago \u2014 Tier 1."
+  },
+  {
+    "company": "Rockstar Games",
+    "role_title": "Business Development Manager",
+    "function": "BizDev",
+    "seniority": "Target",
+    "fit_score": 1.0,
+    "priority_tier": 3,
+    "company_tier": "Tier 1",
+    "baseline_recommendation": "BD",
+    "knockout_flags": [],
+    "rationale": "BizDev-function match at target level, posted 2d ago \u2014 P3 function band (Tier 1)."
+  },
+  {
+    "company": "Netflix",
+    "role_title": "Product Marketing Manager",
+    "function": "PMM",
+    "seniority": "Target",
+    "fit_score": 1.0,
+    "priority_tier": 2,
+    "company_tier": "Tier 1",
+    "baseline_recommendation": "PMM",
+    "knockout_flags": [],
+    "rationale": "PMM-function match at target level, posted 0d ago \u2014 Tier 1."
+  },
+  {
+    "company": "Stripe",
+    "role_title": "Corporate Strategy Associate",
+    "function": "Strategy",
+    "seniority": "Associate",
+    "fit_score": 0.75,
+    "priority_tier": 4,
+    "company_tier": "Tier 1",
+    "baseline_recommendation": "Strategy",
+    "knockout_flags": [],
+    "rationale": "Strategy-function match, but seniority/function combination falls outside P1-P3 bands."
+  },
+  {
+    "company": "Chevron",
+    "role_title": "Manager Corporate Development",
+    "function": "Finance",
+    "seniority": "Target",
+    "fit_score": 0.53,
+    "priority_tier": 4,
+    "company_tier": "Tier 2",
+    "baseline_recommendation": "Finance",
+    "knockout_flags": [],
+    "rationale": "Finance-function match, but seniority/function combination falls outside P1-P3 bands."
+  },
+  {
+    "company": "Roblox",
+    "role_title": "Growth Strategy Manager",
+    "function": "Strategy",
+    "seniority": "Target",
+    "fit_score": 1.0,
+    "priority_tier": 1,
+    "company_tier": "Tier 1",
+    "baseline_recommendation": "Strategy",
+    "knockout_flags": [],
+    "rationale": "Strategy-function match at target level, posted 1d ago \u2014 Tier 1."
+  },
+  {
+    "company": "DraftKings",
+    "role_title": "Director of Partnerships",
+    "function": "BizDev",
+    "seniority": "Director",
+    "fit_score": 0.78,
+    "priority_tier": 5,
+    "company_tier": "Tier 2",
+    "baseline_recommendation": "BD",
+    "knockout_flags": [],
+    "rationale": "Reach-level role \u2014 include only if brand value justifies applying above target seniority."
+  },
+  {
+    "company": "Notion",
+    "role_title": "Customer Success Manager",
+    "function": "CS",
+    "seniority": "Target",
+    "fit_score": 0.93,
+    "priority_tier": 3,
+    "company_tier": "Tier 2",
+    "baseline_recommendation": "CS",
+    "knockout_flags": [],
+    "rationale": "CS-function match at target level, posted 2d ago \u2014 P3 function band (Tier 2)."
+  },
+  {
+    "company": "Riot Games",
+    "role_title": "Senior Manager GTM",
+    "function": "GTM",
+    "seniority": "Target",
+    "fit_score": 0.97,
+    "priority_tier": 4,
+    "company_tier": "Tier 1",
+    "baseline_recommendation": "PMM",
+    "knockout_flags": [],
+    "rationale": "GTM-function match but posting is 4d old \u2014 lower urgency tier."
+  },
+  {
+    "company": "Salesforce",
+    "role_title": "VP Corporate Strategy",
+    "function": "Strategy",
+    "seniority": "VP+",
+    "fit_score": 0.38,
+    "priority_tier": 5,
+    "company_tier": "Tier 2",
+    "baseline_recommendation": "Strategy",
+    "knockout_flags": [
+      "Seniority above target band (VP+)."
+    ],
+    "rationale": "Knockout flag present: Seniority above target band (VP+)."
+  },
+  {
+    "company": "Epic Games",
+    "role_title": "Business Operations Manager",
+    "function": "Strategy",
+    "seniority": "Target",
+    "fit_score": 1.0,
+    "priority_tier": 1,
+    "company_tier": "Tier 1",
+    "baseline_recommendation": "Strategy",
+    "knockout_flags": [],
+    "rationale": "Strategy-function match at target level, posted 2d ago \u2014 Tier 1."
+  },
+  {
+    "company": "NextEra Energy",
+    "role_title": "Manager GTM Insights",
+    "function": "GTM",
+    "seniority": "Target",
+    "fit_score": 0.87,
+    "priority_tier": 4,
+    "company_tier": "Tier 2",
+    "baseline_recommendation": "PMM",
+    "knockout_flags": [],
+    "rationale": "GTM-function match but posting is 5d old \u2014 lower urgency tier."
+  },
+  {
+    "company": "Take-Two Interactive",
+    "role_title": "Product Manager",
+    "function": "Product",
+    "seniority": "Target",
+    "fit_score": 1.0,
+    "priority_tier": 4,
+    "company_tier": "Tier 1",
+    "baseline_recommendation": "PM",
+    "knockout_flags": [],
+    "rationale": "Product-function match, but seniority/function combination falls outside P1-P3 bands."
+  },
+  {
+    "company": "Discord",
+    "role_title": "Strategy & Ops Lead",
+    "function": "Strategy",
+    "seniority": "Target",
+    "fit_score": 0.93,
+    "priority_tier": 1,
+    "company_tier": "Tier 2",
+    "baseline_recommendation": "Strategy",
+    "knockout_flags": [],
+    "rationale": "Strategy-function match at target level, posted 0d ago \u2014 Tier 2."
+  },
+  {
+    "company": "Databricks",
+    "role_title": "Software Engineer",
+    "function": "Other",
+    "seniority": "Target",
+    "fit_score": 0.15,
+    "priority_tier": 5,
+    "company_tier": "Tier 3",
+    "baseline_recommendation": "Strategy",
+    "knockout_flags": [
+      "Function mismatch: Engineering is out of scope."
+    ],
+    "rationale": "Knockout flag present: Function mismatch: Engineering is out of scope."
+  }
+]

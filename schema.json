@@ -1,0 +1,66 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "OpportunityRoutingResult",
+  "description": "Structured output schema for a single scored/routed opportunity record.",
+  "type": "object",
+  "required": [
+    "company",
+    "role_title",
+    "function",
+    "seniority",
+    "fit_score",
+    "priority_tier",
+    "company_tier",
+    "baseline_recommendation",
+    "knockout_flags",
+    "rationale"
+  ],
+  "properties": {
+    "company": {
+      "type": "string",
+      "description": "Company name as listed in the source record."
+    },
+    "role_title": {
+      "type": "string"
+    },
+    "function": {
+      "type": "string",
+      "enum": ["Strategy", "GTM", "PMM", "BizDev", "Product", "CS", "Finance", "Other"]
+    },
+    "seniority": {
+      "type": "string",
+      "enum": ["Intern", "Associate", "Target", "Director", "VP+"]
+    },
+    "fit_score": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1,
+      "description": "Composite fit score from the deterministic scoring engine before any LLM rationale pass."
+    },
+    "priority_tier": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 5,
+      "description": "1 = highest priority per the targeting rules (function match, target level, fresh posting); 5 = reach/backfill only."
+    },
+    "company_tier": {
+      "type": "string",
+      "enum": ["Tier 1", "Tier 2", "Tier 3"]
+    },
+    "baseline_recommendation": {
+      "type": "string",
+      "enum": ["Strategy", "PMM", "PM", "BD", "CS", "Finance"],
+      "description": "Which resume baseline this role routes to."
+    },
+    "knockout_flags": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Hard blockers surfaced by the rules engine (years-of-experience mismatch, credential requirement, location lock, industry lock). Empty array if none visible."
+    },
+    "rationale": {
+      "type": "string",
+      "maxLength": 280,
+      "description": "One-sentence, LLM-generated fit rationale constrained to the system prompt's persona and tone rules."
+    }
+  }
+}
