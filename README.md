@@ -1,22 +1,13 @@
 # job-signal-router
 
-A small, real, runnable pipeline for scoring and routing job opportunities against a
-target profile — deterministic filtering and tiering logic, a JSON-schema-constrained
-output contract, and one narrowly-scoped LLM step for natural-language rationale.
+A small, runnable pipeline that scores and routes records against a rule set: deterministic
+filtering, tiering and knockout checks in plain Python, a JSON Schema output contract, and one
+narrowly scoped LLM step that writes a one-line rationale. Everything a rule can decide is
+decided in code; the model only handles the one step where natural language adds value.
 
-## Context
-
-I run an active, high-volume job search and track roughly 100 target companies across
-gaming, tech, and energy. For months the targeting logic — freshness filters, function
-matching, seniority bands, company-tier weighting, knockout checks for hard blockers —
-lived as a detailed prompt I ran manually inside Claude sessions against a scraped CSV of
-postings. It worked well, but it wasn't a system: it was a set of rules I re-explained to
-a model every time, with no versioning, no tests, and nothing I could point to as evidence
-of the underlying skill.
-
-This project pulls that logic out into something concrete: a standalone Python package
-with a defined schema, a documented system prompt, and deterministic code doing everything
-that doesn't actually need a language model.
+The demo use case is job postings scored against a target profile (function, seniority,
+freshness, company tier). The same pattern applies to any intake queue: inbound leads, partner
+requests, support tickets.
 
 ## What it does
 
@@ -43,6 +34,14 @@ code, not in a prompt. The one place natural-language judgment actually earns it
 turning a structured record into a one-line, specific, non-generic explanation of *why* —
 so that's the only place the LLM is in the loop, and its output is schema-validated before
 it's trusted.
+
+## Why I built it
+
+The rules started as a detailed prompt I ran by hand inside Claude sessions to triage job
+postings across about 100 companies I track. It worked, but it wasn't a system: no versioning,
+no tests, and the same rules re-explained to a model every run. This repo pulls those rules
+into code with a schema and one scoped model call, so the logic is portable, testable and
+reproducible.
 
 ## Run it
 
